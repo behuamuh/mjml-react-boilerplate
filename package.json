@@ -1,0 +1,25 @@
+{
+  "name": "mjml-react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "transform": "babel src/index.js src --out-dir dist",
+    "build": "rm -rf dist && rm -rf build && npm run transform && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faire/mjml-react": "^3.0.2",
+    "mjml": "^4.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
